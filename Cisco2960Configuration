@@ -1,0 +1,7 @@
+ena
+conf t
+hostname "Mark McLean Placement"
+no ip domain-lookup
+vlan 10
+name NetworkManagement
+exit
