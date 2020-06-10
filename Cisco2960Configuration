@@ -2,6 +2,22 @@ ena
 conf t
 hostname "Mark McLean Placement"
 no ip domain-lookup
+service password-encryption
+enable secret College2020!
+line con 0
+password College2020!
+logging synchronous
+login
+history size 10
+exec-timeout 6 50
+exit
+line vty 0 15
+exec-timeout 5 30
+password College2020!
+logging synchronous
+login
+history size 10
+exit
 vlan 10
 name NetworkManagement
 exit
