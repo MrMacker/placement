@@ -20,4 +20,34 @@ history size 10
 exit
 vlan 10
 name NetworkManagement
+vlan 24
+name Lab Computers
+vlan 30
+name Lecturer/Staff 
+vlan 34
+name Administration 
+vlan 20 
+name Students
+vlan 999
+name NativeVLAN
+vlan 1000
+name Discard
+exit
+ip routing
+ip domain-lookup
+interface vlan 24
+ip address 192.168.10.1 255.255.255.240
+no shutdown
+interface vlan 30
+ip address 192.168.10.25 255.255.255.248
+no shutdown
+interface vlan 34
+ip address 192.168.10.33 255.255.255.248
+no shutdown
+interface vlan 20
+ip address 192.168.10.41 255.255.255.248
+no shutdown
+interface vlan 10
+ip address 192.168.10.17 255.255.255.248
+no shutdown
 exit
