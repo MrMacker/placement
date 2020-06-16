@@ -51,3 +51,25 @@ interface vlan 10
 ip address 192.168.10.17 255.255.255.248
 no shutdown
 exit
+int vlan 24
+ip helper-address 192.168.10.20
+exit
+int vlan 30 
+ip helper-address 192.168.10.20
+exit
+int vlan 34
+ip helper-address 192.168.10.20
+exit
+int vlan 20
+ip helper-address 192.168.10.20
+exit
+int gigabitEthernet 0/1
+switchport trunk native vlan 999
+switchport trunk encapsulation dot1q
+switchport mode trunk
+exit
+int gigabitEthernet 0/2
+switchport trunk native vlan 999
+switchport trunk encapsulation dot1q
+switchport mode trunk
+exit
