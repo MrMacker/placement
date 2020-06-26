@@ -1,6 +1,6 @@
 ena
 conf t
-hostname "Mark McLean Placement"
+hostname "MarkMcLeanPlacement"
 no ip domain-lookup
 service password-encryption
 enable secret College2020!
