@@ -21,7 +21,7 @@ exit
 vlan 10
 name NetworkManagement
 vlan 24
-name Lab Computers
+name LabComputers
 vlan 30
 name Lecturer/Staff 
 vlan 34
@@ -76,7 +76,7 @@ exit
 int fastEthernet 0/24
 switchport mode access
 switchport access vlan 10
-description Network Management
+description NetworkManagement
 no shut
 exit
 int range fastethernet 0/1-4
@@ -102,3 +102,6 @@ exit
 write memory
 
 copy running-config startup-config
+
+
+
