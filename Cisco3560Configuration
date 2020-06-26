@@ -97,6 +97,8 @@ description Discard
 no shut
 exit
 spanning-tree vlan 1-4094 root primary
+
 exit
 write memory
+
 copy running-config startup-config
