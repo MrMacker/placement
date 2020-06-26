@@ -73,6 +73,30 @@ switchport trunk native vlan 999
 switchport trunk encapsulation dot1q
 switchport mode trunk
 exit
+int fastEthernet 0/24
+switchport mode access
+switchport access vlan 10
+description Network Management
+no shut
+exit
+int range fastethernet 0/1-4
+switchport mode access
+switchport access vlan 30
+description Lecturer/Staff
+no shut
+exit
+int range fastethernet 0/5-8
+switchport mode access
+switchport access vlan 20
+description Students
+no shut
+int range fastethernet 0/9-22
+switchport mode access
+switchport access vlan 1000
+description Discard
+no shut
+exit
+spanning-tree vlan 1-4094 root primary
+exit
 write memory
-
 copy running-config startup-config
