@@ -105,9 +105,9 @@ copy running-config startup-config
 
 copy running-config tftp:
 
-Address or name of remote host []? 192.168.10.20
+192.168.10.20
 
-Destination filename [MarkMcLeanPlacement-confg]
+MarkMcLeanPlacement-confg
 
 
 
